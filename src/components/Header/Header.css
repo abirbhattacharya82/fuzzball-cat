@@ -1,0 +1,60 @@
+.Header
+{
+    background-color: #075E54;
+    width: 100%;
+    display: flex;
+    position:fixed;
+}
+.Header .DPArea
+{
+    width: 5%;
+    padding: 0.2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Header .DPArea img
+{
+    width: 100%;
+    background-color: rgb(255, 90, 90);
+    border-radius: 50%;
+}
+.Header .NameArea
+{
+    display: flex;
+    align-items: center;
+}
+.Header .NameArea .Texts
+{
+    margin-left: 10%;
+    color: white;
+}
+.Header .NameArea .Texts .Name
+{
+    font-size: 150%;
+    font-weight: bold;
+}
+@media(max-width:700px)
+{
+    .Header .DPArea
+    {
+        width: 10%;
+        padding: 1%;
+    }   
+}
+@media(max-width:400px)
+{
+    .Header .DPArea
+    {
+        width: 15%;
+        padding: 1%;
+    }   
+}
+@media(max-width:300px)
+{
+    .Header .DPArea
+    {
+        width: 20%;
+        padding: 1%;
+    }   
+}

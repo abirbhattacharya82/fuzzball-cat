@@ -1,0 +1,85 @@
+.Body {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: -1;
+    padding-top: 6%;
+}
+
+.InputArea {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #075E54;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.InputArea .Input{
+    width: 78%;
+    padding: 1%;
+}
+.InputArea .Input input{
+    outline: none;
+    background-color: #128C7E;
+    color: white;
+    width: 100%;
+    font-size: 150%;
+    padding: 1%;
+    border-radius: 5px;
+    border: none;
+}
+.InputArea .Button{
+    width: 18%;
+    padding: 1%;
+}
+
+.InputArea .Button button{
+    width: 100%;
+    height: 100%;
+    font-size: 150%;
+    border: none;
+    background-color: #128C7E;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media(max-width:800px) {
+    .Body {
+        padding-top: 7%;
+    }
+}
+
+@media(max-width:700px) {
+    .Body {
+        padding-top: 13%;
+    }
+}
+
+@media(max-width:400px) {
+    .Body {
+        padding-top: 17%;
+    }
+    .InputArea .Button button{
+        font-size: 100%;
+    }
+    .InputArea .Input input{
+        font-size: 100%;
+    }
+}
+
+@media(max-width:300px) {
+    .Body {
+        padding-top: 25%;
+    }
+    .InputArea .Button button{
+        font-size: 90%;
+    }
+    .InputArea .Input input{
+        font-size: 90%;
+    }
+}
