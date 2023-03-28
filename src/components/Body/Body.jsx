@@ -15,7 +15,7 @@ function Body() {
         var newMessage = { message, role };
         setMessages(prevMessages => [...prevMessages, newMessage]);
 
-        const physicsRegex = /^(what|how|when|where|who|why)\s.*(physics|force|energy|motion|acceleration|gravity|mass|velocity|light|electricity|circuit|voltage|resistance|reflection|refraction|laws\s(of|for)\s(reflection|refraction))/i;
+        const physicsRegex = /^(what|how|when|where|who|why|explain)\s.*(physics|force|energy|motion|acceleration|gravity|mass|magnet|magnetic|magnetic lines|electromagnet|right hand thumb rule|loop|faraday|fleming's|snell's|generator|solenoid|conductor|inducer|capacitor|electron|proton|neutron|motor|velocity|light|electricity|circuit|current|ohm's|ohm|resistance|oersted|voltage|resistance|refractive index|lens|reflection|spherical|formula|celcius|fahrenheit|convert|magnification|application|concave|convex|refraction|laws\s(of|for)\s(reflection|refraction))/i;
 
         if (physicsRegex.test(message)) {
             const headers = {
